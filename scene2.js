@@ -103,6 +103,7 @@ class scene2 extends Phaser.Scene{
 
         //player ganha quando atinge 10 pontos
         while (pontuacao >= 10) {
+            //mudar para a cena de parabéns
             pontuacao = 0
             this.scene.stop('scene2'),
             this.scene.start('scene4');

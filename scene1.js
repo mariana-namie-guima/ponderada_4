@@ -11,6 +11,8 @@ class scene1 extends Phaser.Scene{
         this.add.text(50, 250, "CONTROLES", {fill: '#FFFFFF', fontSize:'40px'});
         this.add.text(50, 300, "Seta direita: move para frente \nSeta esquerda: move para trás \nSeta cima: sobe \nSeta baixo: desce", {fill: '#000000', fontSize: '30px'});
         this.add.text(600, 500, "clique para continuar", {fill: '#000000', fontSize: '20px'});
+
+        //mudar da cena de instruções para a do jogo
         this.input.on('pointerdown', () => {
             this.scene.stop('scene1'),
             this.scene.start('scene2');
